@@ -701,12 +701,13 @@ body {
 /* Для мобілки — адаптація */
 @media (max-width: 600px) {
   .main-nav ul {
-    gap: 5px;
+    gap: 2px;
     height: 46px;
+    padding: 0 2px;
   }
   .main-nav .nav-link {
-    font-size: 0.97rem;
-    padding: 7px 10px;
+    font-size: 0.89rem;
+    padding: 6px 5px;
   }
   body {
     padding-top: 46px;
