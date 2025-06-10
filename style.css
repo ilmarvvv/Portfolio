@@ -559,7 +559,7 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
-
+/*mobile uppdate*/
 @media (max-width: 600px) {
     /* Hero section */
     .hero-content h1 {
