@@ -559,3 +559,61 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
+
+@media (max-width: 600px) {
+    /* Hero section */
+    .hero-content h1 {
+      font-size: 2.2rem;
+    }
+    .hero-content p {
+      font-size: 1.1rem;
+    }
+    .hero-content .social-icons {
+      flex-direction: column;
+      gap: 14px;
+    }
+    .hero-content .btn {
+      font-size: 1.1rem;
+      padding: 7px 15px;
+    }
+  
+    /* Main section paddings */
+    .section, .projects-section, #about-me.section {
+      padding: 32px 5px;
+    }
+  
+    /* Projects cards */
+    .project-card {
+      min-width: 0;
+      width: 100%;
+      max-width: 400px;
+    }
+    .projects-grid {
+      gap: 14px;
+    }
+  
+    /* Project images */
+    .project-image {
+      min-width: 0;
+      width: 100%;
+      aspect-ratio: 16/9;
+    }
+    .project-image img {
+      width: 100%;
+      max-height: 160px;
+    }
+  
+    /* Certificates */
+    .cert-slider-wrapper {
+      height: 160px;
+    }
+    .cert-slider img {
+      max-height: 150px;
+    }
+  
+    /* Footer font size */
+    .site-footer {
+      font-size: 0.9rem;
+      padding: 14px 0;
+    }
+  }
