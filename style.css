@@ -1,0 +1,561 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s, border-radius 0.2s;
+    border-radius: 8px;
+    padding: 6px 16px;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    background: #fff !important;
+    color: #222 !important;
+    border-radius: 8px;}
+
+.section {
+    padding: 100px 20px;
+    max-width: 1200px;
+    margin: auto;
+    scroll-margin-top: 60px;
+}
+
+
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('images/HeaderBackGround.jpg') center/cover no-repeat;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+    position: relative;
+    top: 40%;
+    transform: translateY(-40%);
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 9rem;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 5rem;
+    margin: 10px 0 20px;
+}
+
+.hero-content .social-icons {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    margin: 24px 0;
+}
+
+.hero-content .social-icons a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero-content .social-icons img {
+    width: 36px;
+    filter: invert(1) brightness(2);
+}
+
+.hero-content .social-icons span {
+    margin-left: 8px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+/* About Me*/
+#about-me.section {
+    margin-top: 60px;
+    padding: 0px 20px;
+}
+
+#about-me h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#about-me p {
+    font-weight: bold;;
+    font-size: 1.5rem;
+    max-width: 1000px;
+    margin: auto;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    border: none;
+    background: transparent;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.hero-content .btn {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.hero-content .btn:hover {
+    background: #fff;
+    color: black;
+}
+
+/* Skills adjustments */
+
+#skills{
+    padding-top: 0px;
+}
+#skills h2.skill-section-title {
+    font-size: 3rem;
+    text-align: center;
+    margin: 0px 0 20px;
+    
+}
+
+.skill-grid {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.skill-group {
+    max-width: 1000px;
+    margin: 0 auto 40px; /* додаємо відступ знизу */
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill-group h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.skill-group h3::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background: #a64ca6;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.skill-group ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-group ul li {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.soft-list {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+}
+
+.hard-skills {
+    background: #000000; /* темно-сірий фон */
+    color: #fff;      /* білий текст */
+}
+
+.hard-skills a,
+.hard-skills strong {
+    color: #fff; /* щоб і жирний текст був білим */
+}
+
+.soft-skills .soft-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 55px;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.soft-skills .soft-list li {
+    position: relative; /* для ::before */
+    padding-left: 16px; /* відступ під контроль */
+    font-size: 1.5rem;
+    line-height: 1.6;
+    font-weight: 700; /* жирний текст */
+    color: #000; /* чорний текст */
+}
+.soft-skills .soft-list li .soft-dot {
+    font-size: 2rem;
+    line-height: 1;
+    margin-right: 8px;
+    display: inline-block;
+    color: #000;
+}
+
+/* Projects */
+/* Projects Section */
+.projects-section {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    background: #000000;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+  
+  .projects-section .section-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .projects-section h2 {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+  }
+  
+  /* Grid на дві картки */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-items: center;
+  }
+  
+  @media (max-width: 768px) {
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .project-card {
+    background: #ffffff;
+    border-radius: 6px;
+    overflow: visible;
+    transition: transform 0.3s ease;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05) translateY(-10px);
+    z-index: 1;
+  }
+
+  .project-image {
+    width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  padding: 0px;
+  margin-bottom: 0px;
+  box-sizing: border-box;
+  background: #fff; /* або інший колір фону за потребою */
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  }
+  
+  .project-image img {
+    width: 100%;
+  height: 100%;
+  object-fit: contain;    /* ← було cover, тепер contain */
+  background: #000;       /* колір за “рамкою” картинки */
+  transition: transform 0.3s ease;
+  border-radius: 3px;
+  margin-bottom: 0px; /* прибрали відступ знизу */
+  }
+  
+  .project-content {
+  display: flex;           /* ← ДОДАВ */
+  flex-direction: column;  /* ← ДОДАВ */
+  flex: 1;                 /* ← ДОДАВ: займає весь вільний простір */
+  padding: 0px 12px 12px 12px;
+  text-align: center;
+  color: #121212;
+  }
+  .project-content .btn-small {
+    /* Змінив: штовхаємо кнопку вниз */
+    margin-top: auto; /* ← ДОДАВ */
+    align-self: center; /* ← ДОДАВ: центр по горизонталі */
+  }
+  
+  .project-content h3 {
+    font-size: 2rem;
+    margin: 8px 0 0 0;
+    color: #121212;
+  }
+  
+  .project-content p {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: left;;
+    color: #292929;
+    margin-bottom: 20px;
+  }
+  .project-buttons {
+    display: flex;
+    gap: 12px; /* відстань між кнопками */
+    justify-content: center; /* або flex-start, якщо хочеш по лівому краю */
+    flex-wrap: wrap; /* щоб не лізли за межі */
+    margin-top: auto; /* щоб кнопки були внизу картки */
+}
+  
+  .btn-small {
+    display: inline-block;
+    font-size: 1.3rem;     /* ↑ збільшили для читабельності */
+    padding: 10px 20px;    /* трохи більший розмір */
+    border: 2px solid #121212;
+    border-radius: 4px;
+    color: #121212;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+
+
+  .github-btn {
+    background-color: #000; /* чорний фон */
+    color: #fff;            /* білий текст */
+    border-color: #000;     /* чорна рамка */
+}
+
+
+
+
+/* Education section improved */
+#education{
+    padding-top: 20px;
+}
+
+#education .edu-title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.edu-grid {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: stretch; /* щоб верх по одній лінії */
+    flex-wrap: nowrap; /* НЕ давати переноситись у два рядки */
+}
+
+.edu-grid .edu-block:nth-child(1) {
+    flex: 0 1 75%; /* Education — ~75% */
+    background: #f9f9f9;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.edu-grid .edu-block:nth-child(2) {
+    flex: 0 1 25%; /* Languages — ~25% */
+    background: #000000; /* чорний фон */
+    color: #ffffff;      /* білий текст */
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.edu-block:hover {
+    transform: translateY(-5px);
+}
+
+.edu-block h3 {
+    margin: 0;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    font-weight: 700;
+}
+
+
+
+.edu-block ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.edu-block ul li {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.edu-grid .edu-block:nth-child(2) ul li {
+    text-align: center;
+    color: #ffffff; /* щоб текст у Languages був білий */
+}
+
+.edu-dates {
+    font-size: 1.3rem;
+    color: #666;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Certificates Section */
+#certificates h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.cert-slider-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.cert-slider-wrapper {
+    overflow: hidden;
+    background: #000;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    height: 520px; /* фіксована висота блоку */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cert-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.cert-slider img {
+    flex: 0 0 100%;
+    max-width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+.cert-prev, .cert-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.4);
+    color: #fff;
+    border: none;
+    padding: 12px 16px;
+    cursor: pointer;
+    font-size: 2rem;
+    border-radius: 50%;
+    z-index: 2;
+    transition: background-color 0.3s ease;
+}
+
+.cert-prev {
+    left: -60px;
+}
+
+.cert-next {
+    right: -60px;
+}
+
+.cert-prev:hover, .cert-next:hover {
+    background-color: rgba(0,0,0,0.7);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .cert-prev {
+        left: -40px;
+    }
+
+    .cert-next {
+        right: -40px;
+    }
+
+    .cert-slider-wrapper {
+        height: 400px;
+    }
+
+    .cert-slider img {
+        max-height: 380px;
+    }
+}
+
+/* Для мобілки — автоматом працює за рахунок overflow-x */
+
+/* Mobile */
+@media (max-width: 768px) {
+    .edu-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .edu-grid .edu-block:nth-child(1),
+    .edu-grid .edu-block:nth-child(2) {
+        flex: 1 1 100%; /* на мобілці — обидва на 100% */
+    }
+}
+
+.site-footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1rem;
+    margin-top: 40px;
+    border-top: 2px solid #444;
+}
+
+.site-footer p {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
